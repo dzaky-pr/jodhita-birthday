@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(144, 208, 230);
+    background-image: linear-gradient(to bottom, rgb(153, 210, 229), lightblue, rgb(190, 218, 228))
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: -1em;
+}
+
+.decoration {
+    display: flex;
+    justify-content: center;
+}
+
+.box-card {
+    text-align: center;
+    color: whitesmoke;
+    overflow: hidden;
+    padding: 1em;
+    line-height: 3em;
+    /* animation: wiggle 0.5s ease-in-out 2s infinite alternate-reverse; */
+}
+
+.box-card>.text1 {
+    font-size: 5em;
+    animation: slide_Up 1s ease;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px slategray;
+}
+
+.box-card>.text2 {
+    font-size: 5em;
+    animation: slide_Up2 1s ease;
+    ;
+}
+
+.box-card .photo {
+    overflow: hidden;
+    padding: 1em;
+}
+
+.photo {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    top: 190px;
+    position: absolute;
+    animation: slide_Up3 1s ease;
+    overflow: hidden;
+}
+
+.photo .odhi {
+    /* animation: wiggle 0.5s ease-in-out 2s infinite alternate-reverse; */
+}
+
+.balloons {
+    height: 600px;
+    display: flex;
+    top: 190px;
+    left: 100px;
+    position: absolute;
+    animation: wiggle 0.5s ease-in-out infinite alternate-reverse;
+}
+
+.balloons2 {
+    height: 600px;
+    display: flex;
+    top: 190px;
+    right: 100px;
+    position: absolute;
+    animation: wiggle 0.5s ease-in-out infinite alternate-reverse;
+}
+
+.clouds {
+    position: absolute;
+    height: 500px;
+    z-index: -999;
+    left: 50px;
+    top: -90px;
+}
+
+.clouds2 {
+    position: absolute;
+    height: 500px;
+    z-index: -999;
+    right: -10px;
+    top: -90px;
+}
+
+.clouds3 {
+    position: absolute;
+    height: 700px;
+    z-index: -999;
+    right: 10px;
+    bottom: 10px;
+    top: 90px;
+    left: 10px;
+}
+
+.clouds4 {
+    position: absolute;
+    height: 900px;
+    z-index: -999;
+    right: 10px;
+    top: -80px;
+}
+
+.sun {
+    position: absolute;
+    height: 300px;
+    z-index: -9999;
+    top: -140px;
+    right: -140px;
+}
+
+.decoration .hot-air-balloon {
+    height: 210px;
+    top: 30px;
+    left: 450px;
+    position: absolute;
+    z-index: -999;
+}
+
+@keyframes slide_Up {
+    0% {
+        transform: translateY(250px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide_Up2 {
+    0% {
+        transform: translateY(400px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide_Up3 {
+    0% {
+        transform: translateY(-300px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translate(10px);
+        transform: rotate(-3deg)
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: rotate(3deg)
+    }
+}

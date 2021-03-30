@@ -146,6 +146,8 @@ h1 {
     animation: hotAirBalloon2 45s linear infinite alternate;
 }
 
+.controls {}
+
 @keyframes slide_Up {
     0% {
         transform: translateY(250px);

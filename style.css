@@ -35,7 +35,7 @@ body {
 
 .box-card>.text1 {
     font-size: 5em;
-    animation: slide_Up 1s ease;
+    animation: slide_Up 1.5s ease;
 }
 
 h1 {
@@ -44,7 +44,7 @@ h1 {
 
 .box-card>.text2 {
     font-size: 5em;
-    animation: slide_Up2 1s ease;
+    animation: slide_Up2 1.5s ease;
     ;
 }
 
@@ -59,7 +59,7 @@ h1 {
     align-items: center;
     top: 190px;
     position: absolute;
-    animation: slide_Up3 1s ease;
+    animation: slide_Up3 1.5s ease;
     overflow: hidden;
 }
 
@@ -73,7 +73,7 @@ h1 {
     top: 190px;
     left: 100px;
     position: absolute;
-    animation: wiggle 0.5s ease-in-out infinite alternate-reverse;
+    animation: wiggle 0.7s ease-in-out 1.5s infinite alternate-reverse;
 }
 
 .balloons2 {
@@ -82,7 +82,7 @@ h1 {
     top: 190px;
     right: 100px;
     position: absolute;
-    animation: wiggle 0.5s ease-in-out infinite alternate-reverse;
+    animation: wiggle 0.7s ease-in-out 1.5s infinite alternate-reverse;
 }
 
 .clouds {
@@ -125,14 +125,25 @@ h1 {
     z-index: -9999;
     top: -140px;
     right: -140px;
+    animation: sunRotate 21s ease-in-out infinite reverse;
 }
 
 .decoration .hot-air-balloon {
     height: 210px;
     top: 30px;
-    left: 450px;
+    left: -170px;
     position: absolute;
     z-index: -999;
+    animation: hotAirBalloon 45s linear infinite alternate;
+}
+
+.decoration .hot-air-balloon2 {
+    height: 210px;
+    bottom: 30px;
+    right: -190px;
+    position: absolute;
+    z-index: -999;
+    animation: hotAirBalloon2 45s linear infinite alternate;
 }
 
 @keyframes slide_Up {
@@ -157,22 +168,54 @@ h1 {
 
 @keyframes slide_Up3 {
     0% {
-        transform: translateY(-300px);
+        transform: scale(0);
     }
 
     100% {
-        transform: translateY(0);
+        transform: scale(450px);
     }
 }
 
 @keyframes wiggle {
     0% {
-        transform: translate(10px);
         transform: rotate(-3deg)
     }
 
     100% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes sunRotate {
+    0% {
+        transform: translate(10px);
+        transform: rotate(-360deg);
+    }
+
+    100% {
         transform: translateY(0);
-        transform: rotate(3deg)
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hotAirBalloon {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1600px);
+
+    }
+}
+
+@keyframes hotAirBalloon2 {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-1600px);
+
     }
 }

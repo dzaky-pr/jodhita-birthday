@@ -223,3 +223,89 @@ h1 {
 
     }
 }
+
+/* iPhone X */
+@media only screen and (max-width : 375px) and (max-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+    .box-card>.text1 {
+        font-size: 2.5em;
+        animation: slide_Up 1.5s ease;
+    }
+
+    .box-card>.text2 {
+        font-size: 2.5em;
+        animation: slide_Up2 1.5s ease;
+    }
+
+    .box-card {
+        text-align: center;
+        color: whitesmoke;
+        overflow: hidden;
+        padding: 1em;
+        line-height: 19em;
+        /* animation: wiggle 0.5s ease-in-out 2s infinite alternate-reverse; */
+    }
+
+    .balloons {
+        height: 300px;
+        display: flex;
+        top: 230px;
+        left: -70px;
+        position: absolute;
+        animation: wiggle 0.7s ease-in-out 1.5s infinite alternate-reverse;
+    }
+
+    .balloons2 {
+        height: 300px;
+        display: flex;
+        top: 230px;
+        right: -70px;
+        position: absolute;
+        animation: wiggle 0.7s ease-in-out 1.5s infinite alternate-reverse;
+    }
+
+    .photo .odhi {
+        position: relative;
+        /* animation: wiggle 0.5s ease-in-out 2s infinite alternate-reverse; */
+    }
+
+    .odhi {
+        height: 270px;
+        cursor: pointer;
+        top: -110px;
+
+    }
+
+    .clouds {
+        position: absolute;
+        height: 0px;
+        z-index: -999;
+        left: 50px;
+        top: -90px;
+    }
+
+    .clouds2 {
+        position: absolute;
+        height: 500px;
+        z-index: -999;
+        right: -10px;
+        top: -90px;
+    }
+
+    .clouds3 {
+        position: absolute;
+        height: 700px;
+        z-index: -999;
+        right: 10px;
+        bottom: 10px;
+        top: 90px;
+        left: 10px;
+    }
+
+    .clouds4 {
+        position: absolute;
+        height: 900px;
+        z-index: -999;
+        right: 10px;
+        top: -80px;
+    }
+}

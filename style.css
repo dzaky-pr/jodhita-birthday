@@ -247,6 +247,8 @@ h1 {
         overflow: hidden;
         padding: 1em;
         line-height: 19em;
+        right: 230px;
+        position: relative;
         /* animation: wiggle 0.5s ease-in-out 2s infinite alternate-reverse; */
     }
 
@@ -266,6 +268,10 @@ h1 {
         right: -70px;
         position: absolute;
         animation: wiggle 0.7s ease-in-out 1.5s infinite alternate-reverse;
+    }
+
+    .photo {
+        right: 79px;
     }
 
     .photo .odhi {

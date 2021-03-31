@@ -4,9 +4,9 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* html {
+html {
     height: 100%;
-} */
+}
 
 body {
     background-color: rgb(144, 208, 230);
@@ -14,6 +14,7 @@ body {
 }
 
 .container {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: -1em;
@@ -30,7 +31,7 @@ body {
     overflow: hidden;
     padding: 1em;
     line-height: 3em;
-    /* animation: wiggle 0.5s ease-in-out 2s infinite alternate-reverse; */
+    animation: wiggle 0.7s ease-in-out 1.5s infinite alternate-reverse;
 }
 
 .box-card>.text1 {
@@ -64,7 +65,7 @@ h1 {
 }
 
 .photo .odhi {
-    /* animation: wiggle 0.5s ease-in-out 2s infinite alternate-reverse; */
+    animation: wiggle 0.7s ease-in-out 1.5s infinite alternate-reverse;
 }
 
 .balloons {
@@ -225,7 +226,7 @@ h1 {
 }
 
 /* iPhone X */
-@media screen and (max-width : 947px)and (-webkit-device-pixel-ratio : 3) {
+/* @media screen and (max-width : 947px)and (-webkit-device-pixel-ratio : 3) {
     .box-card>.text1 {
         font-size: 2.5em;
         animation: slide_Up 1.5s ease;
@@ -311,7 +312,7 @@ h1 {
         right: 10px;
         top: -80px;
     }
-}
+} */
 
 /* 1792x828px at 326ppi */
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {}
+/* @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {} */

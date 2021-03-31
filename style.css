@@ -146,7 +146,9 @@ h1 {
     animation: hotAirBalloon2 45s linear infinite alternate;
 }
 
-.controls {}
+.odhi {
+    cursor: pointer;
+}
 
 @keyframes slide_Up {
     0% {

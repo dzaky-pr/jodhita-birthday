@@ -226,6 +226,11 @@ h1 {
 
 /* iPhone X */
 @media only screen and (max-width : 375px) and (max-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+    .compatible {
+        height: 375px;
+        width: 812px;
+    }
+
     .box-card>.text1 {
         font-size: 2.5em;
         animation: slide_Up 1.5s ease;

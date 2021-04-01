@@ -209,18 +209,5 @@ function updateParticles() {
 		}
 	}
 }
-function loadSparta() {
-	let domain = location.href;
-	if (domain.indexOf('xmas.spartacodingclub.kr') > 0) {
-		document.getElementsByClassName('letter-open')[0].innerHTML += `
-		<p id="sparta" onclick="location.href='https://spartacodingclub.kr/online/xmas'" style="color: white;cursor: pointer; padding-top: 2px; text-align: center;">
-			powered by "SpartaCodingClub"
-		</p>
-	`
-	}
-	
-}
+
 window.addEventListener('load', setInterval(startConfetti, 1000));
-window.addEventListener('load', loadSparta);
-
-
